@@ -1,19 +1,21 @@
 .login-pf body {
-    background: url("../img/keycloak-bg.png") no-repeat center center fixed;
-    background-size: cover;
+    background-image: none;
+    background-color: #F3F5F5;
+    font-family: Muli;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*IE compatibility*/
 .pf-c-form-control {
-    font-size: 14px;
+    font-size: 15px;
     font-size: var(--pf-global--FontSize--sm);
-    border-width: 1px;
+    border-width: 1.25px;
     border-width: var(--pf-global--BorderWidth--sm);;
-    border-color: #EDEDED #EDEDED #8A8D90 #EDEDED;
-    border-color: var(--pf-global--BorderColor--300) var(--pf-global--BorderColor--300) var(--pf-global--BorderColor--200) var(--pf-global--BorderColor--300);
-    background-color: #FFFFFF;
-    background-color: var(--pf-global--BackgroundColor--100);
+    border-color: #dde4e6;
+    background-color: #fbfcfc;
     height: 36px;
     height: calc(var(--pf-c-form-control--FontSize) * var(--pf-c-form-control--LineHeight) + var(--pf-c-form-control--BorderWidth) * 2 + var(--pf-c-form-control--PaddingTop) + var(--pf-c-form-control--PaddingBottom));
     padding: 5px 0.5rem;
@@ -21,17 +23,13 @@
 }
 
 .pf-c-form-control:hover, .pf-c-form-control:focus {
-    border-bottom-color: #0066CC;
-    border-bottom-color: var(--pf-global--primary-color--100);
-    border-bottom-width: 2px;
-    border-bottom-width: var(--pf-global--BorderWidth--md);
+    border-color: #8b959c;
+    border-bottom-width: 1px;
 }
 
 .pf-c-form-control[aria-invalid="true"] {
     border-bottom-color: #C9190B;
     border-bottom-color: var(--pf-global--danger-color--100);
-    border-bottom-width: 2px;
-    border-bottom-width: var(--pf-global--BorderWidth--md);
 }
 
 .pf-c-alert.pf-m-inline {
@@ -226,7 +224,7 @@ div.kc-logo-text span {
     text-transform: uppercase;
     letter-spacing: 3px;
     line-height: 1.2em;
-    padding: 62px 10px 20px;
+    /* padding: 62px 10px 20px; */
     white-space: normal;
 }
 
@@ -620,10 +618,7 @@ ul#kc-totp-supported-apps {
     margin: 0 auto;
     box-shadow: var(--pf-global--BoxShadow--lg);
     padding: 0 20px;
-    max-width: 500px;
-    border-top: 4px solid;
-    border-color: #0066CC; /* default - IE compatibility */
-    border-color: var(--pf-global--primary-color--100);
+    width: 500px;
 }
 
 /*phone*/
